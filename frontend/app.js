@@ -87,8 +87,8 @@ function renderizarOperadores() {
                 ${op.operador}
             </span>
             <div>
-                <p class="font-semibold text-gray-700">${op.nome}</p>
-                <p class="text-sm text-gray-600">${op.exemplo}</p>
+                <p class="text-sm font-semibold text-gray-700">${op.nome}</p>
+                <p class="text-xs text-gray-600">${op.exemplo}</p>
             </div>
         </div>
     `).join('');
@@ -100,7 +100,7 @@ function renderizarExemplos() {
     if (!container) return;
     
     container.innerHTML = exemplos.map(exemplo => `
-        <button class="example-btn w-full text-center px-4 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition duration-200 font-mono text-sm">
+        <button class="example-btn w-full text-sm text-center px-4 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition duration-200 font-mono text-sm">
             ${exemplo}
         </button>
     `).join('');
@@ -192,7 +192,7 @@ document.getElementById('clear-btn').addEventListener('click', () => {
     document.getElementById('regex-input').value = '';
     document.getElementById('string-input').value = '';
     document.getElementById('afn-output').innerHTML = `
-        <p class="text-gray-400 text-center py-8">
+        <p class="text-gray-400 text-center py-4">
             Digite uma expressão regular e clique em "Converter"
         </p>
     `;
