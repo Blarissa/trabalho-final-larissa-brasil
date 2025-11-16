@@ -129,12 +129,12 @@ pip3 --version
 
 **Windows:**
 ```bash
-cd C:\Users\laris\Desktop\teoria\trabalho-final
+cd trabalho-final
 ```
 
 **macOS/Linux:**
 ```bash
-cd ~/Desktop/teoria/trabalho-final
+cd ~/trabalho-final
 ```
 
 ---
@@ -423,7 +423,7 @@ retorna: estados_atuais ∩ estados_finais ≠ ∅
 
 **Windows:**
 ```bash
-cd C:\Users\laris\Desktop\teoria\trabalho-final
+cd trabalho-final
 python -m venv venv
 venv\Scripts\activate
 cd backend
@@ -433,7 +433,7 @@ python server.py
 
 **macOS/Linux:**
 ```bash
-cd ~/Desktop/teoria/trabalho-final
+cd ~trabalho-final
 python3 -m venv venv
 source venv/bin/activate
 cd backend
@@ -447,7 +447,7 @@ python server.py
 
 **Windows:**
 ```bash
-cd C:\Users\laris\Desktop\teoria\trabalho-final
+cd trabalho-final
 venv\Scripts\activate
 cd backend
 python server.py
@@ -455,7 +455,7 @@ python server.py
 
 **macOS/Linux:**
 ```bash
-cd ~/Desktop/teoria/trabalho-final
+cd ~/trabalho-final
 source venv/bin/activate
 cd backend
 python server.py
@@ -561,13 +561,5 @@ lsof -ti:5000 | xargs kill -9
 Larissa Brasil
 Ciência da Computação - Teoria da Computação  
 UFPI - 2025
-
----
-
-## Licença
-
-*Projeto desenvolvido para fins educacionais como trabalho acadêmico da disciplina de Teoria da Computação.*
-
----
 
 *Desenvolvido para a disciplina de Teoria da Computação.*
