@@ -559,6 +559,7 @@ lsof -ti:5000 | xargs kill -9
 ## Autora
 
 Larissa Brasil
+
 Ciência da Computação - Teoria da Computação  
 UFPI - 2025
 
