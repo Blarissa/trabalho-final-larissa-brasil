@@ -197,18 +197,12 @@ python server.py
 
 **Saída esperada:**
 ```
-Servidor iniciado em http://localhost:5000
-Acesse o frontend em: http://localhost:5000
-Use Ctrl+C para parar o servidor.
  * Serving Flask app 'server'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http://127.0.0.1:5000
 Press CTRL+C to quit
  * Restarting with stat
-Servidor iniciado em http://localhost:5000
-Acesse o frontend em: http://localhost:5000
-Use Ctrl+C para parar o servidor.
  * Debugger is active!
  * Debugger PIN: 372-015-684
 ```
