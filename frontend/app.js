@@ -1,4 +1,3 @@
-// Configuração da API
 const API_URL = 'http://localhost:5000/api';
 
 class AFNSimulador {
@@ -57,7 +56,6 @@ class AFNSimulador {
     }
 }
 
-// Inicialização
 const simulador = new AFNSimulador();
 let afnAtual = null;
 
@@ -76,7 +74,6 @@ const exemplos = [
     '(0|1)*0'
 ];
 
-// Renderizar operadores dinamicamente
 function renderizarOperadores() {
     const container = document.getElementById('operadores-container');
     if (!container) return;
@@ -94,7 +91,6 @@ function renderizarOperadores() {
     `).join('');
 }
 
-// Renderizar exemplos dinamicamente
 function renderizarExemplos() {
     const container = document.getElementById('exemplos-container');
     if (!container) return;
@@ -105,7 +101,6 @@ function renderizarExemplos() {
         </button>
     `).join('');
     
-    // Adicionar event listeners aos novos botões
     document.querySelectorAll('.example-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             document.getElementById('regex-input').value = btn.textContent.trim();
@@ -113,13 +108,11 @@ function renderizarExemplos() {
     });
 }
 
-// Inicialização quando a página carregar
 document.addEventListener('DOMContentLoaded', () => {
     renderizarOperadores();
     renderizarExemplos();
 });
 
-// Event Listeners
 document.getElementById('convert-btn').addEventListener('click', async () => {
     const expressao = document.getElementById('regex-input').value.trim();
     
@@ -166,28 +159,24 @@ document.getElementById('test-btn').addEventListener('click', async () => {
     }
 });
 
-// Enter para testar
 document.getElementById('string-input').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         document.getElementById('test-btn').click();
     }
 });
 
-// Enter para converter
 document.getElementById('regex-input').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         document.getElementById('convert-btn').click();
     }
 });
 
-// Exemplos
 document.querySelectorAll('.example-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         document.getElementById('regex-input').value = btn.textContent.trim();
     });
 });
 
-// Limpar
 document.getElementById('clear-btn').addEventListener('click', () => {
     document.getElementById('regex-input').value = '';
     document.getElementById('string-input').value = '';
@@ -200,7 +189,6 @@ document.getElementById('clear-btn').addEventListener('click', () => {
     afnAtual = null;
 });
 
-// Exportar
 document.getElementById('export-btn').addEventListener('click', () => {
     if (!afnAtual) {
         mostrarErro('Não há AFN para exportar.');
@@ -216,7 +204,6 @@ document.getElementById('export-btn').addEventListener('click', () => {
     a.click();
 });
 
-// Funções auxiliares
 function exibirAFN(afn) {
     const output = document.getElementById('afn-output');
     output.innerHTML = `<pre class="text-gray-800">${simulador.formatarAFN(afn)}</pre>`;

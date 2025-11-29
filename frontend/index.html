@@ -9,20 +9,15 @@
 </head>
 
 <body class="bg-indigo-50 min-h-screen">
-    <!-- Header -->
     <header class="text-center pt-8">
         <h1 class="text-xl font-bold text-gray-800">
             Conversor de Expressões Regulares
         </h1>
         <p class="text-sm text-gray-600">ER → AFN-ε (Autômato Finito Não Determinístico com ε-transições)</p>
     </header>
-    <div class="flex flex-col lg:flex-row gap-2 p-8">
-
-        <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <!-- Left Panel: Input -->
             <div class="space-y-6">
-                <!-- Expression Input Card -->
                 <div class="bg-white rounded-lg shadow-lg p-4">
                     <h2 class="text-g font-semibold text-gray-800 mb-4">
                         Expressão Regular
@@ -35,39 +30,31 @@
                             <input type="text" id="regex-input" placeholder="Ex: (a|b)*abb"
                                 class="w-full px-4 py-2 border text-sm border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-g font-mono">
                         </div>
-    
+
                         <button id="convert-btn"
                             class="h-fit bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2 px-6 rounded-lg transition duration-200 self-end">
                             Converter
                         </button>
                     </div>
                 </div>
-
-                <!-- Operators Guide Card -->
                 <div class="bg-white rounded-lg shadow-lg p-4">
                     <h3 class="text-g font-semibold text-gray-800 mb-4">
                         Operadores Suportados
                     </h3>
 
                     <div id="operadores-container" class="grid grid-cols-2 gap-4">
-                        <!-- Os operadores serão inseridos aqui via JavaScript -->
                     </div>
                 </div>
 
-                <!-- Examples Card -->
                 <div class="bg-white rounded-lg shadow-lg p-4">
                     <h3 class="text-g font-semibold text-gray-800 mb-4">
                         Exemplos
                     </h3>
                     <div id="exemplos-container" class="grid grid-cols-4 gap-4">
-                        <!-- Os exemplos serão inseridos aqui via JavaScript -->
                     </div>
                 </div>
             </div>
-
-            <!-- Right Panel: Output -->
             <div class="space-y-6">
-                <!-- AFN Result Card -->
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <h2 class="text-g font-semibold text-gray-800 mb-4">
                         AFN-ε Resultante
@@ -79,7 +66,6 @@
                     </div>
                 </div>
 
-                <!-- String Testing Card -->
                 <div class="bg-white rounded-lg shadow-lg p-4">
                     <h2 class="text-g font-semibold text-gray-800 mb-4">
                         Teste de Cadeias
@@ -103,11 +89,9 @@
                     </div>
 
                     <div id="test-results" class="space-y-2 max-h-64 overflow-auto mt-2">
-                        <!-- Results will be added here dynamically -->
                     </div>
                 </div>
 
-                <!-- Quick Actions -->
                 <div class="bg-white flex justify-between items-center rounded-lg shadow-lg p-4">
                     <h3 class="text-g font-semibold text-gray-800">
                         Ações Rápidas

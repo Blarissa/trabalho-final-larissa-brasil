@@ -83,12 +83,14 @@ class AFNEpsilon:
     def __str__(self):
         """Representação textual do autômato"""
         resultado = []
-        str = (f"--- Autômato Finito Não Determinístico com ε-transições ---\n" +
-               f"Estados: {{{', '.join(str(e) for e in sorted(self.estados, key=lambda x: x.nome))}}}\n" +
-               f"Alfabeto: {{{', '.join(sorted(self.alfabeto))}}}\n" +
-               f"Estado Inicial: {self.estado_inicial}\n" +
-               f"Estados Finais: {{{', '.join(str(e) for e in sorted(self.estados_finais, key=lambda x: x.nome))}}}\n" +
-               "Transições:\n")
+        str = f"""--- Autômato Finito Não Determinístico com ε-transições ---
+                Estados: {{{', '.join(str(e) for e in sorted(self.estados, key=lambda x: x.nome))}}}
+                Alfabeto: {{{', '.join(sorted(self.alfabeto))}}}
+                Estado Inicial: {self.estado_inicial}
+                Estados Finais: 
+                {{{', '.join(str(e) for e in sorted(self.estados_finais, key=lambda x: x.nome))}}}
+                Transições:
+                """
         resultado.append(str)
         
         transicoes_ordenadas = sorted(self.transicoes.items(), 

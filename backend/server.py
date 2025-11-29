@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, send_from_directory # type: ignore
 from flask_cors import CORS
 from conversor_er import ConversorER
 import os
@@ -9,7 +9,6 @@ CORS(app)
 conversor = ConversorER()
 afn_atual = None
 
-# Serve o arquivo HTML da pasta frontend
 @app.route('/')
 def index():
     frontend_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'frontend')
@@ -80,7 +79,4 @@ def reconhecer():
 
 
 if __name__ == '__main__':
-    print("Servidor iniciado em http://localhost:5000\n" +
-          "Acesse o frontend em: http://localhost:5000\n" +
-          "Use Ctrl+C para parar o servidor.")
     app.run(debug=True, port=5000)
