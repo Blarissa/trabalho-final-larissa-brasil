@@ -129,12 +129,12 @@ pip3 --version
 
 **Windows:**
 ```bash
-cd trabalho-final
+cd trabalho-final-larissa-brasil
 ```
 
 **macOS/Linux:**
 ```bash
-cd ~/trabalho-final
+cd ~/trabalho-final-larissa-brasil
 ```
 
 ---
@@ -423,7 +423,7 @@ retorna: estados_atuais ∩ estados_finais ≠ ∅
 
 **Windows:**
 ```bash
-cd trabalho-final
+cd trabalho-final-larissa-brasil
 python -m venv venv
 venv\Scripts\activate
 cd backend
@@ -433,7 +433,7 @@ python server.py
 
 **macOS/Linux:**
 ```bash
-cd ~trabalho-final
+cd ~trabalho-final-larissa-brasil
 python3 -m venv venv
 source venv/bin/activate
 cd backend
@@ -447,7 +447,7 @@ python server.py
 
 **Windows:**
 ```bash
-cd trabalho-final
+cd trabalho-final-larissa-brasil
 venv\Scripts\activate
 cd backend
 python server.py
