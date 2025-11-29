@@ -189,15 +189,7 @@ Você deve ver Flask e Flask-CORS listados.
 
 ## Como Executar
 
-### 1. Navegue até a pasta backend
-
-```bash
-cd backend
-```
-
----
-
-### 2. Inicie o servidor
+### 1. Inicie o servidor
 
 ```bash
 python server.py
@@ -207,17 +199,25 @@ python server.py
 ```
 Servidor iniciado em http://localhost:5000
 Acesse o frontend em: http://localhost:5000
+Use Ctrl+C para parar o servidor.
  * Serving Flask app 'server'
  * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http://127.0.0.1:5000
 Press CTRL+C to quit
+ * Restarting with stat
+Servidor iniciado em http://localhost:5000
+Acesse o frontend em: http://localhost:5000
+Use Ctrl+C para parar o servidor.
+ * Debugger is active!
+ * Debugger PIN: 372-015-684
 ```
 
 **Nota:** O aviso sobre "development server" é normal para uso local/acadêmico.
 
 ---
 
-### 3. Acesse no navegador
+### 2. Acesse no navegador
 
 Abra seu navegador e acesse:
 ```
@@ -226,7 +226,7 @@ http://localhost:5000
 
 ---
 
-### 4. Para encerrar
+### 3. Para encerrar
 
 Pressione `CTRL + C` no terminal.
 
