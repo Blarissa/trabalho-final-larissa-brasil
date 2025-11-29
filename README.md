@@ -189,23 +189,7 @@ Você deve ver Flask e Flask-CORS listados.
 
 ## Como Executar
 
-### 1. Ative o ambiente virtual
-
-**Windows:**
-```bash
-# Na pasta raiz do projeto
-venv\Scripts\activate
-```
-
-**macOS/Linux:**
-```bash
-# Na pasta raiz do projeto
-source venv/bin/activate
-```
-
----
-
-### 2. Navegue até a pasta backend
+### 1. Navegue até a pasta backend
 
 ```bash
 cd backend
@@ -213,7 +197,7 @@ cd backend
 
 ---
 
-### 3. Inicie o servidor
+### 2. Inicie o servidor
 
 ```bash
 python server.py
@@ -233,7 +217,7 @@ Press CTRL+C to quit
 
 ---
 
-### 4. Acesse no navegador
+### 3. Acesse no navegador
 
 Abra seu navegador e acesse:
 ```
@@ -242,7 +226,7 @@ http://localhost:5000
 
 ---
 
-### 5. Para encerrar
+### 4. Para encerrar
 
 Pressione `CTRL + C` no terminal.
 
